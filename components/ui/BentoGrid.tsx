@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
+import { BackgroundBeams } from "./background-beams";
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
@@ -52,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "HTML", "Typescript"];
+  const rightLists = ["VueJS", "NextJS", "CSS"];
 
   const [copied, setCopied] = useState(false);
 
@@ -111,6 +111,9 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        {id == 4 && (
+          <BackgroundBeams />
+        )}
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
@@ -148,7 +151,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-gradient-to-r from-[#000035] to-[#10132E] border-[#10132E] border-l-2"
                   >
                     {item}
                   </span>
@@ -161,7 +164,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-centerbg-gradient-to-r from-[#000035] to-[#10132E] border-[#10132E] border-l-2"
                   >
                     {item}
                   </span>
@@ -171,10 +174,7 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
+             
               <div
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}

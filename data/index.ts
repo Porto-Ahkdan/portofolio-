@@ -8,17 +8,17 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Coding is my fav. Up for a coding session or just a chat, hit me up!",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: " text-xs lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
-    spareImg: "",
+    spareImg: "/grid.svg",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Need someone to listen? I'm here.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,9 +28,9 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    title: "Teknologi yang saya gunakan ",
+    description: "Terus memperbaiki",
+    className: " lg:text-xs lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -49,8 +49,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "AI pelengkap, bukan pengganti.",
+    description: "Pribadi unggul",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
